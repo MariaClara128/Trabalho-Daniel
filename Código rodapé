@@ -1,0 +1,25 @@
+Cóidigo de Rodapé linkado.
+
+
+<footer id="contato" style="text-align: center; padding: 40px 20px; background-color: #D8CAB8; color: #333; margin-top: 60px;">
+  <p>&copy; 2025 Vienna Store. Todos os direitos reservados.</p>
+  <p>Email: contato@viennastore.com | Instagram: @viennastore</p>
+  <p>Telefone: (83) 9999-0000</p>
+  <h4> Ajuda e suporte</h4>
+  <OL>
+    <li><h5>Devolução </h5></li>
+    <li><h5>Reembolso </h5></li>
+    <li> <h5>Política de frete</h5></li>
+   
+  </OL>
+</footer>
+</html>
+
+
+/* Rolagem suave para âncoras */
+html {
+  scroll-behavior: smooth;
+}
+
+*desenvolvimento do arquivo do documento com as informações obrigatórias relativas ao grupo e seu processo de desenvolvimento.
+*desenvolvimento da logo da marca original, identidade visual e cores também.
