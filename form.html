@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário Vienna</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+<form action="agradecimento.html" method="get">
+    <!-- Mensagem de segurança -->
+    <div class="secure-message" id="secureMessage">
+        <i class="fas fa-lock"></i>
+        <span>Seus dados estão protegidos.</span>
+    </div>
+
+    <h2>Cadastro para contato e cupom de desconto</h2>
+
+    <label>Nome completo:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" required><br><br>
+    
+    <label>Telefone (opcional):</label><br>
+    <input type="tel" name="telefone"><br><br>
+
+    <label>Data de nascimento:</label><br>
+    <input type="date" name="nascimento"><br><br>
+
+    <label>Você gostaria de receber um cupom de desconto?</label><br>
+    <input type="checkbox" name="cupom" value="sim">Sim<br><br>
+
+    <label>Como você conheceu nossa loja?</label><br>
+    <select name="origem">
+        <option value="google">Google</option>
+        <option value="redes">Redes sociais</option>
+        <option value="indicacao">Indicação de amigos</option>
+        <option value="outro">Outro</option>
+    </select><br><br>
+
+    <label>Produtos de interesse:</label><br>
+    <input type="checkbox" name="interesse" value="masculina">Moda masculina<br>
+    <input type="checkbox" name="interesse" value="feminina">Moda feminina<br>
+    <input type="checkbox" name="interesse" value="acessorios">Acessórios<br>
+    <input type="checkbox" name="interesse" value="promocoes">Promoções em geral<br><br>
+
+    <label>Você gostaria de receber ofertas baseadas no seu perfil?</label><br>
+    <input type="checkbox" name="ofertas_personalizadas" value="sim">Sim, aceito<br><br>
+
+    <label>Você prefere frete grátis ou desconto no produto?</label><br>
+    <input type="radio" name="preferencia" value="frete">Frete grátis<br>
+    <input type="radio" name="preferencia" value="desconto">Desconto no produto<br><br>
+
+    <label>Deixe um feedback sobre nosso site ou atendimento:</label><br>
+    <textarea name="feedback" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
