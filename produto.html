@@ -1,0 +1,193 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <style>
+    .categorias {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .categorias button {
+      background-color:#8a7f71;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 2px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - Vienna Store</title>
+    <link rel="stylesheet" href="produtos.css" />
+  </head>
+  <body>
+
+    <div class="banner"> 
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl4b7cbSFU5vlqmJC0meuW0C1BmvhQjyyjltTFr5La46DhJjqvt7xQz8SKnSVCWuJgtfgAIQr4udQyqzg1nK2vDNR04OXuxUejk0LVKyhhwLKa0S7_ujZ1_RTdF0_-0PV_IMPbTdOQbtjYgttprtpBUTphqTUxlyUwAHjrlpJi9B2PHxV7CzZ3O-i2UG9P/s320/vienna-store.png" alt="vienna-store" width="240px" height="120px">
+          </div>
+          <nav>
+            <ul id="menuitens">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="#">Empresa</a></li>
+              <li><a href="#">Contatos</a></li>
+              <li><a href="#">Minha conta</a></li>
+            </ul>
+          </nav>
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj06mIRfGFn6ytA7YNrT7-4r0_RneOj9uq22CJetS45ALWNF_VJhNjOicnsdygN7ZDISi4xn_u9z_yYqyfXyIA-W3VES84QT2vFevyJdy1lIjp3yhp_lEijLBnpXRkVEX5dzMac_ZpW0Nx7tSjTnQuYE4AUH1YhUnSl7Av60860tIvKkOgPY-AN5JqGy8h3/s1600/carrinho.png" alt="Carrinho" width="40px" height="40px">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="categorias">
+        <button onclick="filtrarProdutos('todos')">Todos</button>
+        <button onclick="filtrarProdutos('feminino')">Feminino</button>
+        <button onclick="filtrarProdutos('masculino')">Masculino</button>
+      </div>
+
+      <div class="produtos">
+        <!-- Produtos Femininos -->
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/92/38/51/9238518e12bd7e712baecc4b54b2fd4d.jpg" alt="Roupa Feminina 1">
+          <h3>Calça Social</h3>
+          <p class="preco">R$ 124,90</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/1a/ba/39/1aba392e00ba2f89540c5723f292d64e.jpg" alt="Roupa Feminina 2">
+          <h3>Saia Alfaiataria</h3>
+          <p class="preco">R$ 87,50</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/20/9e/be/209ebe6696c41489352e2ea2763d2d95.jpg" alt="Roupa Feminina 3">
+          <h3>Colete Off-White</h3>
+          <p class="preco">R$ 97,00</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/cf/9b/6b/cf9b6b5a0ae47fe7973fd51448506ae2.jpg" alt="Roupa Feminina 4">
+          <h3>Calça Wide-Leg</h3>
+          <p class="preco">R$ 131,90</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/a4/3a/25/a43a25107180ea03134e8ae6649f83d7.jpg" alt="Roupa Feminina 5">
+          <h3>Saia Cinza</h3>
+          <p class="preco">R$ 68,90</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/e9/5d/d5/e95dd5a65c4eaed3b0fb72021a5ceb36.jpg" alt="Roupa Feminina 6">
+          <h3>Mini Dress</h3>
+          <p class="preco">R$ 142,00</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/b8/f8/05/b8f80546a08ef67757d0a7d80c3f9677.jpg" alt="Roupa Feminina 7">
+          <h3>Macacão Preto</h3>
+          <p class="preco">R$ 155,90</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/fd/dc/97/fddc97cd5a75003f8b0fad3699196918.jpg" alt="Roupa Feminina 9">
+          <h3>Colete Preto</h3>
+          <p class="preco">R$ 94,70</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/e6/49/f1/e649f102e640a177f4ea8a56ef48fee2.jpg" alt="Roupa Feminina 10">
+          <h3>Conjunto Vinho</h3>
+          <p class="preco">R$ 199,00</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/15/d8/b9/15d8b97611f2c12413c6710ffd784d20.jpg" alt="Roupa Feminina 11">
+          <h3>Blazer Cinza</h3>
+          <p class="preco">R$ 88,40</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/fb/01/0e/fb010e580e795cad3a930e90eecf9c32.jpg" alt="Roupa Feminina 12">
+          <h3>Blusa Colete</h3>
+          <p class="preco">R$ 115,50</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/99/52/60/995260c386fa1eafab38996d601d49ae.jpg" alt="Roupa Feminina 13">
+          <h3>Regata Branca</h3>
+          <p class="preco">R$ 77,90</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/2d/d3/01/2dd301693f86dd3e5119e790f65de24f.jpg" alt="Roupa Feminina 14">
+          <h3>Saia Preta</h3>
+          <p class="preco">R$ 90,00</p>
+        </div>
+        <div class="produto feminino">
+          <img src="https://i.pinimg.com/736x/d8/07/d1/d807d1b4640690427da2b5901eac3a30.jpg" alt="Roupa Feminina 15">
+          <h3>Blazer Preto</h3>
+          <p class="preco">R$ 129,90</p>
+        </div>
+
+        <!-- Produtos Masculinos -->
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/ae/e3/5b/aee35b5fd8cc925f03d6f11bee8b4676.jpg" alt="Roupa Masculina 1">
+          <h3>Calça Social</h3>
+          <p class="preco">R$ 109,90</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/21/69/05/216905dbd74aaed4af8407b5fb8a4e9c.jpg" alt="Roupa Masculina 2">
+          <h3>Camisa Marrom</h3>
+          <p class="preco">R$ 139,00</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/8f/f4/90/8ff4902d2c5a9c3251155b5a0d158bb4.jpg" alt="Roupa Masculina 3">
+          <h3>Blazer Bege</h3>
+          <p class="preco">R$ 173,90</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/2a/39/e5/2a39e54b27ee4e7045a6f9da0db132ac.jpg" alt="Roupa Masculina 4">
+          <h3>Calça Alfaiataria</h3>
+          <p class="preco">R$ 120,00</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/59/ea/07/59ea0772e2e5aa96dca8c173d1e8d4a6.jpg" alt="Roupa Masculina 5">
+          <h3>Camisa Bege</h3>
+          <p class="preco">R$ 93,80</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/88/4f/74/884f741519aacd2a474aaa306141a760.jpg" alt="Roupa Masculina 6">
+          <h3>Camisa Preta</h3>
+          <p class="preco">R$ 89,90</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/7c/2a/d0/7c2ad0bb60a915532bf3dab98dd67850.jpg" alt="Roupa Masculina 7">
+          <h3>Blazer Marrom</h3>
+          <p class="preco">R$ 169,50</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/b2/a7/c0/b2a7c057b375e30cf1a3872f092752b0.jpg" alt="Roupa Masculina 8">
+          <h3>Camisa Dual-Color</h3>
+          <p class="preco">R$ 75,00</p>
+        </div>
+        <div class="produto masculino">
+          <img src="https://i.pinimg.com/736x/fb/14/45/fb1445bf519b6ef3be5ec64ff7258418.jpg" alt="Roupa Masculina 9">
+          <h3>Camisa Botão Branca</h3>
+          <p class="preco">R$ 110,00</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function filtrarProdutos(categoria) {
+        const produtos = document.querySelectorAll('.produto');
+        produtos.forEach(p => {
+          if (categoria === 'todos' || p.classList.contains(categoria)) {
+            p.classList.remove('hidden');
+          } else {
+            p.classList.add('hidden');
+          }
+        });
+      }
+    </script>
+
+  </body>
+  </html>
