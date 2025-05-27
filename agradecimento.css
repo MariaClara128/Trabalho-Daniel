@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D8CAB8; /* fundo bege claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.agradecimento-container {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+.mensagem i {
+    font-size: 60px;
+    color: #9d8437; /* ícone com tom dourado suave */
+    margin-bottom: 20px;
+    animation: pop 0.5s ease;
+}
+
+h1 {
+    font-size: 36px;
+    color: #563434; /* título marrom escuro */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555; /* cor de parágrafo suave */
+    margin-bottom: 10px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #563434; /* botão marrom escuro */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #9d8437; /* hover em dourado suave */
+    transform: scale(1.05);
+}
+
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
